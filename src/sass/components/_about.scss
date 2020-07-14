@@ -1,0 +1,67 @@
+//добавление элемента before
+.text-before {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+  @include lineWithText(#555555);
+}
+
+//оформление заголовка
+.best-barbershop {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: black;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+//оформление текста
+.about-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.img-tab {
+  display: none;
+}
+.img-desk {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .img-tab {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-tab {
+    display: none;
+  }
+  .img-desk {
+    display: block;
+  }
+}
