@@ -22,7 +22,7 @@
   color: black;
   margin-top: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 42px;
     line-height: 1.17;
   }
@@ -38,7 +38,7 @@
   letter-spacing: 0.02em;
   color: #555555;
   margin-top: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.67;
   }
@@ -54,14 +54,31 @@
 @media screen and (min-width: 768px) {
   .img-tab {
     display: block;
+    margin-right: 33px;
+  }
+  .div-about {
+    display: flex;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1279px) {
+  .img-tab .about-img:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .img-tab {
     display: none;
   }
   .img-desk {
-    display: block;
+    display: inline-flex;
   }
+  .img-desk .about-img:first-child {
+    margin-right: 30px;
+  }
+}
+
+ul {
+  padding: 0;
 }
