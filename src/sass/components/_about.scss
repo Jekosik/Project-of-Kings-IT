@@ -1,0 +1,122 @@
+.container.div-about {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//добавление элемента before
+.text-before {
+  font-family: Open Sans;
+  font-style: normal;
+  color: #303030;
+  @include lineWithText(#555555);
+  margin-left: 80px;
+  margin-top: 0;
+}
+
+//оформление заголовка
+.best-barbershop {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: black;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+//оформление текста
+.about-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-top: 20px;
+}
+
+.about-text.one {
+  font-size: 16px;
+  line-height: 1.63;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+//позиционирование кнопки
+@media screen and (min-width: 768px) {
+  .thumb-text {
+    position: relative;
+  }
+
+  .btn.about-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn.about-button {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+
+.btn.about-button {
+  color: black;
+}
+
+//скрытие фото в моб версии
+.img-tab {
+  display: none;
+}
+.img-desk {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .img-tab {
+    display: block;
+    margin-right: 33px;
+  }
+  .div-about {
+    display: flex;
+  }
+  img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .img-tab .img1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-tab {
+    display: none;
+  }
+  .img-desk {
+    display: flex;
+  }
+  .img-desk .img3 {
+    margin-right: 30px;
+  }
+  .img-desk .img4 {
+    margin-right: 64px;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}

@@ -18,7 +18,7 @@
         </ul>
       </section>
     </div>
-
+    <!-- Мобильное меню -->
     <div class="container-mobile">
       <a href="./index.html" class="logo">
         <svg class="header-svg" width="70" height="60">
@@ -31,7 +31,7 @@
         class="menu-button"
         aria-expanded="false"
         aria-controls="navigation"
-        id="contacts"
+        href="#contacts"
         data-menu-button
       >
         <svg
@@ -50,31 +50,35 @@
       <div class="header-menu" data-menu>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item" id="about">О нас</li>
-            <li class="navigation-item" id="services">Услуги и цены</li>
-            <li class="navigation-item" id="masters">Мастера</li>
-            <li class="navigation-item" id="contacts">Контакты</li>
+            <li class="nav-list">
+              <a class="navigation-item" href="#about">О нас</a>
+            </li>
+            <li class="nav-list">
+              <a class="navigation-item" href="#services">Услуги и цены</a>
+            </li>
+            <li class="nav-list">
+              <a class="navigation-item" href="#masters">Мастера</a>
+            </li>
+            <li class="nav-list">
+              <a class="navigation-item" href="#contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <div class="contacts">
-          <h2 class="contacts-title visually-hidden">Контакты</h2>
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a href="tel:+380441111111" class="contacts-tel">
-                +38 044 111 11 11
-              </a>
-            </li>
-            <li class="contacts-item">
-              <button class="btn-register">
-                онлайн-запись
-              </button>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="contacts"> -->
+        <ul class="contacts-list-header">
+          <li class="contacts-item-header">
+            <a href="tel:+380441111111" class="contacts-tel">
+              +38 044 111 11 11
+            </a>
+          </li>
+          <li class="contacts-item-header">
+            <button class="btn">
+              онлайн-запись
+            </button>
+          </li>
+        </ul>
+        <!-- </div> -->
         <section class="social-work">
-          <h2 class="social-work-title visually-hidden">
-            Примеры наших работ в соцсетях
-          </h2>
           <ul class="social-work-list">
             <li class="social-work-item">
               <a href="" class="social-work-ref">Instagram</a>
@@ -86,7 +90,7 @@
         </section>
       </div>
 
-      <h2 class="header-subtitle">A hair salon for men in Kyiv</h2>
+      <p class="header-subtitle">A hair salon for men in Kyiv</p>
       <h1 class="header-title">BarberShop</h1>
       <p class="header-text">
         Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
@@ -98,6 +102,9 @@
   <!-- может быть слайдер -->
 
   <div class="header-thumb">
+    <input type="radio" name="r" id="r1" checked />
+    <input type="radio" name="r" id="r2" />
+    <input type="radio" name="r" id="r3" />
     <div class="siema">
       <div class="slide">
         <picture class="slide">
@@ -190,11 +197,16 @@
         </picture>
       </div>
     </div>
-  </div>
-  <!-- кнопки для переключалки -->
-  <div class="container">
-    <button class="button-primeri prev">Назад</button>
-    <button class="button-primeri next">Вперед</button>
+    <!-- кнопки для переключалки -->
+    <div class="container-btn">
+      <button class="button-primeri prev">Назад</button>
+      <button class="button-primeri next">Вперед</button>
+    </div>
+    <div class="laiby">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+    </div>
   </div>
 
   <script>
