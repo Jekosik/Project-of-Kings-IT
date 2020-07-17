@@ -275,6 +275,10 @@
 }
 
 .navigation-list {
+  @media screen and (max-width: 1199px) {
+    margin-left: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -567,31 +571,7 @@
   color: $white-color;
 }
 
-.laiby {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 339px;
-  right: 55px;
-  @media screen and (min-width: 768px) {
-    right: 39px;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.bar {
-  width: 8px;
-  height: 2px;
-  background-color: $secondary-text-color;
-  margin-bottom: 12px;
-  transform: scale(1.25);
-  transition: transform 250ms $cubic;
-}
-
-input[name='r'] {
-  position: absolute;
-  visibility: hidden;
+.img-team {
+  display: block;
+  max-width: 100%;
 }

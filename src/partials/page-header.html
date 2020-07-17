@@ -89,22 +89,20 @@
           </ul>
         </section>
       </div>
-
-      <p class="header-subtitle">A hair salon for men in Kyiv</p>
-      <h1 class="header-title">BarberShop</h1>
-      <p class="header-text">
-        Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-        вкусом.
-      </p>
+      <div class="head-text">
+        <p class="header-subtitle">A hair salon for men in Kyiv</p>
+        <h1 class="header-title">BarberShop</h1>
+        <p class="header-text">
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+          вкусом.
+        </p>
+      </div>
     </div>
   </div>
 
   <!-- может быть слайдер -->
 
   <div class="header-thumb">
-    <input type="radio" name="r" id="r1" checked />
-    <input type="radio" name="r" id="r2" />
-    <input type="radio" name="r" id="r3" />
     <div class="siema">
       <div class="slide">
         <picture class="slide">
@@ -122,15 +120,18 @@
               ./images/tablet/Slider1_t_@2x.jpg 2x,
               ./images/tablet/Slider1_t_@3x.jpg 3x
             "
-            media="(max-width:1200px)"
+            media="(max-width:1199px)"
           />
-          <img
+          <source
             srcset="
               ./images/desktop/Slider1_d_1x.jpg  1x,
               ./images/desktop/Slider1_d_@2x.jpg 2x,
               ./images/desktop/Slider1_d_@2x.jpg 3x
             "
-            class="img--team"
+            media="(min-width:1200px)"
+          />
+          <img
+            class="img-team"
             src="./images/desktop/Slider1_d_1x.jpg"
             alt="Слайд"
           />
@@ -152,15 +153,18 @@
               ./images/tablet/Slider2_t_@2x.jpg 2x,
               ./images/tablet/Slider3_t_@3x.jpg 3x
             "
-            media="(max-width:1200px)"
+            media="(max-width:1199px)"
           />
-          <img
+          <source
             srcset="
               ./images/desktop/Slider2_d_1x.jpg  1x,
               ./images/desktop/Slider2_d_@2x.jpg 2x,
               ./images/desktop/Slider2_d_@3x.jpg 3x
             "
-            class="img--team"
+            media="(min-width:1200px)"
+          />
+          <img
+            class="img-team"
             src="./images/desktop/Slider2_d_1x.jpg"
             alt="Слайд"
           />
@@ -182,15 +186,18 @@
               ./images/tablet/Slider3_t_@2x.jpg 2x,
               ./images/tablet/Slider3_t_@3x.jpg 3x
             "
-            media="(max-width:1200px)"
+            media="(max-width:1199px)"
           />
-          <img
+          <source
             srcset="
               ./images/desktop/Slider3_d_1x.jpg  1x,
               ./images/desktop/Slider3_d_@2x.jpg 2x,
               ./images/desktop/Slider3_d_@3x.jpg 3x
             "
-            class="img--team"
+            media="(min-width:1200px)"
+          />
+          <img
+            class="img-team"
             src="./images/desktop/Slider3_d_1x.jpg"
             alt="Слайд"
           />
@@ -201,11 +208,6 @@
     <div class="container-btn">
       <button class="button-primeri prev">Назад</button>
       <button class="button-primeri next">Вперед</button>
-    </div>
-    <div class="laiby">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
     </div>
   </div>
 
