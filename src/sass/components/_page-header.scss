@@ -43,6 +43,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 52px;
+    align-items: center;
   }
 }
 
@@ -569,6 +570,10 @@
 .button-primeri:hover,
 .button-primeri:focus {
   color: $white-color;
+}
+
+.btn.reg {
+  margin-top: 0;
 }
 
 .img-team {
