@@ -7,7 +7,13 @@
   margin-right: auto;
 
   background: #111319;
-  background-image: url(../images/mobile/S_price_m_1x.jpg);
+
+  background-image:url(../images/section_price.jpg);
+  
+  
+  
+  
+
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -135,9 +141,14 @@
   .item {
     // display: block;
     // width: 358px;
-    // height: 30px;
 
-    width: 100%;
+    height: 30px;
+    // overflow: auto;
+    
+    width:100%;
+
+  
+
     justify-content: space-between;
     display: flex;
 
@@ -145,19 +156,44 @@
   }
 }
 .product {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  /* identical to box height, or 214% */
-  letter-spacing: 0.02em;
-  color: #9da4bd;
 
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+/* identical to box height, or 214% */
+letter-spacing: 0.02em;
+color: #9DA4BD;
+
+
+// &::after {
+//   content:"";
+//   display: block;
+//   // height: 20px;
+//   width: calc(100%-12px);
+//   border-bottom:5px solid crimson;
+// }
+
+@media screen and (min-width:768px) {
+  font-size: 18px;
 }
+}
+
+.tire {
+  flex: 1 0;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+  height: 1em;
+  margin: 6px;
+   
+
+
+
+}
+
+
+
+
 .price {
   font-family: Open Sans;
   font-style: normal;
@@ -168,17 +204,18 @@
 
   letter-spacing: 0.02em;
 
-  color: #9da4bd;
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
-}
-.tire {
-  width: auto;
-  border: 1px solid green;
 
-  background-color: red;
+ color: #9DA4BD;
+
+
+
+
+@media screen and (min-width:768px) {
+  font-size: 18px;
 }
+  
+}
+
 
 .btn {
   display: block;
