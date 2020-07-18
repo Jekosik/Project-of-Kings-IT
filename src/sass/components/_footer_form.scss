@@ -1,5 +1,6 @@
 .footer {
   margin: 0 auto;
+  padding: 0;
   background-color: #191c26;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -144,7 +145,7 @@
   border-width: 1px;
   color: $white-color;
   border-color: rgba(157, 164, 189, 0.4);
-  width: 100%;
+  // width: 100%;
   outline: none;
   resize: none;
 
@@ -154,11 +155,16 @@
     transform: translateY(-30px);
   }
 
+  @media screen and (min-width: 480px) {
+    width: 418px;
+  }
+
   @media screen and (min-width: 768px) {
-    min-width: 690px;
+    width: 690px;
   }
 
   @media screen and (min-width: 1200px) {
+    width: 530px;
     max-width: 560px;
   }
 }
