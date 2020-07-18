@@ -6,16 +6,21 @@
   margin-left: auto;
   margin-right: auto;
 
+  
   background-color: #111319;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../images/section-price.jpg);
-
+  
+  background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/section-price.jpg);
+  
+  
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
+  background-position:center;
+  
   // opacity: 20%;
+  
+  
+  
+
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -83,6 +88,9 @@
 
 .ul-fone {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  
+
+  
 
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -107,81 +115,97 @@
 
   @media screen and (min-width: 1280px) {
     width: 585px;
+   
   }
 }
-.services-ul-first {
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 10px;
+  .services-ul-first {
+    
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
-    padding-right: 40px;
-    padding-left: 40px;
+    @media screen and (min-width: 768px) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 30px;
+
+      background: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
   }
 
-  @media screen and (min-width: 1280px) {
+  .services-ul-second {
+    
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 30px;
 
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (min-width: 768px) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 30px;
+      background: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
   }
-}
 
-.services-ul-second {
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  .item {
+    // display: block;
+    // width: 358px;
 
-  @media screen and (min-width: 768px) {
-    padding-right: 40px;
-    padding-left: 40px;
+    height: 30px;
+    // overflow: auto;
+    
+    width:100%;
+
+  
+
+    justify-content: space-between;
+    display: flex;
+
+    &:not(:last-child){
+    margin-bottom: 20px;}
   }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 30px;
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-  }
-}
-
-.item {
-  // display: block;
-  // width: 358px;
-
-  height: 30px;
-  // overflow: auto;
-
-  width: 100%;
-
-  justify-content: space-between;
-  display: flex;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
 
 .product {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  /* identical to box height, or 214% */
-  letter-spacing: 0.02em;
-  color: #9da4bd;
 
-  // &::after {
-  //   content:"";
-  //   display: block;
-  //   // height: 20px;
-  //   width: calc(100%-12px);
-  //   border-bottom:5px solid crimson;
-  // }
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+/* identical to box height, or 214% */
+letter-spacing: 0.02em;
+color: #9DA4BD;
 
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
+
+// &::after {
+//   content:"";
+//   display: block;
+//   // height: 20px;
+//   width: calc(100%-12px);
+//   border-bottom:5px solid crimson;
+// }
+
+@media screen and (min-width:768px) {
+  font-size: 18px;
+}
 }
 
 .tire {
@@ -189,7 +213,14 @@
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
   height: 1em;
   margin: 6px;
+   
+
+
+
 }
+
+
+
 
 .price {
   font-family: Open Sans;
@@ -201,12 +232,18 @@
 
   letter-spacing: 0.02em;
 
-  color: #9da4bd;
 
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
+ color: #9DA4BD;
+
+
+
+
+@media screen and (min-width:768px) {
+  font-size: 18px;
 }
+  
+}
+
 
 .btn {
   display: block;
