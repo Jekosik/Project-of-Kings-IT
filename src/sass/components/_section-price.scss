@@ -6,42 +6,43 @@
   margin-left: auto;
   margin-right: auto;
 
-  
   background-color: #111319;
-  
-  background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/section-price.jpg);
-  
-  
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/section-price.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
-  
-  // opacity: 20%;
-  
-  
-  
+  background-position: center;
 
+  // opacity: 20%;
 
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 31px;
     padding-right: 31px;
+    padding-bottom: 84px;
+    padding-top: 84px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 39px;
     padding-right: 39px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
   @media screen and (min-width: 1200px) {
     width: 1280px;
     padding-left: 55px;
     padding-right: 55px;
+    padding-bottom: 130px;
+    padding-top: 130px;
   }
 }
 
 .section.services {
-  padding-top: 84px;
-  padding-bottom: 84px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .text {
@@ -88,9 +89,6 @@
 
 .ul-fone {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  
-
-  
 
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -115,97 +113,81 @@
 
   @media screen and (min-width: 1280px) {
     width: 585px;
-   
   }
 }
-  .services-ul-first {
-    
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
+.services-ul-first {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 
-    @media screen and (min-width: 768px) {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-
-
-    @media screen and (min-width: 1280px) {
-      padding-bottom: 30px;
-
-      background: linear-gradient(
-        180deg,
-        #171a24 0%,
-        rgba(23, 26, 36, 0.2) 100%
-      );
-    }
+  @media screen and (min-width: 768px) {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
-  .services-ul-second {
-    
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+  @media screen and (min-width: 1280px) {
     padding-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
 
+.services-ul-second {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 
-    @media screen and (min-width: 1280px) {
-      padding-top: 30px;
-      background: linear-gradient(
-        180deg,
-        #090b13 0%,
-        rgba(9, 11, 19, 0.2) 100%
-      );
-    }
+  @media screen and (min-width: 768px) {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
-  .item {
-    // display: block;
-    // width: 358px;
-
-    height: 30px;
-    // overflow: auto;
-    
-    width:100%;
-
-  
-
-    justify-content: space-between;
-    display: flex;
-
-    &:not(:last-child){
-    margin-bottom: 20px;}
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
+}
+
+.item {
+  // display: block;
+  // width: 358px;
+
+  height: 30px;
+  // overflow: auto;
+
+  width: 100%;
+
+  justify-content: space-between;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
 .product {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 30px;
-/* identical to box height, or 214% */
-letter-spacing: 0.02em;
-color: #9DA4BD;
+  // &::after {
+  //   content:"";
+  //   display: block;
+  //   // height: 20px;
+  //   width: calc(100%-12px);
+  //   border-bottom:5px solid crimson;
+  // }
 
-
-// &::after {
-//   content:"";
-//   display: block;
-//   // height: 20px;
-//   width: calc(100%-12px);
-//   border-bottom:5px solid crimson;
-// }
-
-@media screen and (min-width:768px) {
-  font-size: 18px;
-}
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .tire {
@@ -213,14 +195,7 @@ color: #9DA4BD;
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
   height: 1em;
   margin: 6px;
-   
-
-
-
 }
-
-
-
 
 .price {
   font-family: Open Sans;
@@ -232,18 +207,12 @@ color: #9DA4BD;
 
   letter-spacing: 0.02em;
 
+  color: #9da4bd;
 
- color: #9DA4BD;
-
-
-
-
-@media screen and (min-width:768px) {
-  font-size: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
-  
-}
-
 
 .btn {
   display: block;
