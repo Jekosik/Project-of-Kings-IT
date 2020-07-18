@@ -343,7 +343,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
   }
 }
 .contacts-item-header,
@@ -571,6 +571,9 @@
   color: $white-color;
 }
 
+.btn.reg {
+  margin-top: 0px;
+}
 .img-team {
   display: block;
   max-width: 100%;
